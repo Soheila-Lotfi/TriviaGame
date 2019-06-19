@@ -122,6 +122,14 @@ $("#start").click(function() {
      $("#main-section").html("");
      $("#main-section").append(firstQuestion,secondQuestion, thirdQuestion);
 
+    // make timer for the page using setInterval method
+      // variables
+        var count=30;      // user has 30 seconds to answer the question    
+        var timer=$("<p>").html("<h2> Time Remaining:"+""+count+""+"seconds"+"</h2>");   // creat a p tag with the content of "Time Remaining:30 seconds
+      // show the timer on the page
+       $("#main-section").append(timer);
+
+
 });
    
      
