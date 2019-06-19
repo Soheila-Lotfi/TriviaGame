@@ -187,8 +187,14 @@ $("#start").click(function() {
             }
         
         });
-    
+// make function result to show the result of the trivia game on the page
+    function result(){
 
+        $("#main-section").append("<h2> Correct Answers"+""+correctAnswer+"</h2>", 
+        "<h2> Correct Answers"+""+incorrectAnswer+"</h2>",
+        "<h2> Correct Answers"+""+unAnswerd+"</h2>");
+     
+    }
 
 });
    
