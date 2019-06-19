@@ -12,6 +12,13 @@
     text-transform: capitalize;
     color: #853030
       }
+    
+    h3{
+
+    margin-left: 340px;
+    line-height: 30px;
+
+    }
   
 /* styling the start button */
     #start{
