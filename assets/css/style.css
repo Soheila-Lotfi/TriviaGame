@@ -1,0 +1,38 @@
+
+  body{
+
+    background-image: url('../images/movie.png');
+      }
+
+    h1{
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align:center;
+    font-size: 48px;
+    text-transform: capitalize;
+      }
+  
+/* styling the start button */
+    #start{
+
+        font-size: 30px;
+        padding: 20px 50px 20px 50px;
+        margin-top: 90px;
+        margin-left: 380px;
+      }
+
+    #main-section{
+    
+      margin:0 auto;
+    }
+
+    #container{
+    
+      margin: 3% auto;
+      width: 900px;
+      min-height: 500px;
+      border: 2px solid gray;
+      background-color: rgba(231, 221, 221, 0.5);
+      
+    }
+
