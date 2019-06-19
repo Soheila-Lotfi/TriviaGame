@@ -21,11 +21,7 @@
     margin-left: 380px;
       }
 
-    #main-section{
-    
-    margin:0 auto;
-    }
-
+/* styling the container and the main section */
     #container{
     
     margin: 3% auto;
@@ -35,11 +31,18 @@
     background-color: rgba(231, 221, 221, 0.5);
     
     }
-    form{
-        
-    margin:0 auto;
-      }
 
+    #main-section{
+
+    margin:0 auto;
+    }
+
+
+/* Questions and inputs */
+    form{
+
+    margin:0 auto;
+    }
     .radio-button{
 
     margin-top:30px;
@@ -47,3 +50,31 @@
     margin-left: 180px;
       } 
 
+    .question{
+
+    font-size: 18px;
+    margin:0 auto;
+    
+    }
+    
+    p{
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+    
+    #first2{
+
+    margin-left:100px;
+    } 
+    #second2{
+    margin-left:220px;
+    }
+    #first3{
+    margin-left: 120px;
+    }
+
+    #second3{
+    margin-left:200px;
+    }
