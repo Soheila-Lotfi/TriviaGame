@@ -1,7 +1,7 @@
 
   body{
 
-    background-image: url('../images/movie.png');
+    background-image: url('../images/movie1.png');
       }
 
     h1{
@@ -10,6 +10,7 @@
     text-align:center;
     font-size: 48px;
     text-transform: capitalize;
+    color: #853030
       }
   
 /* styling the start button */
@@ -28,7 +29,7 @@
     width: 900px;
     min-height: 500px;
     border: 2px solid gray;
-    background-color: rgba(231, 221, 221, 0.5);
+    background-color: rgba(251, 250, 250, 0.93);
     
     }
 
@@ -68,13 +69,18 @@
 
     margin-left:100px;
     } 
+
     #second2{
+
     margin-left:220px;
     }
+
     #first3{
+
     margin-left: 120px;
     }
 
     #second3{
+
     margin-left:200px;
     }
