@@ -168,12 +168,26 @@ $("#start").click(function() {
             unAnswerd--;
             var userAnswer=$('input[name=secondquestion]:checked').val(); 
             if(userAnswer ==="Arendelle"){ 
-            correctAnswer++;              // the right answer for the second question is Arendelle
+            correctAnswer++;                // the right answer for the second question is Arendelle
             }
             else{
             incorrectAnswer++;
             }
          });
+    
+    //Thirdquestion
+        thirdQuestion.on('change', function() {
+            unAnswerd--;
+            var userAnswer=$('input[name=thirdquestion]:checked').val(); 
+            if(userAnswer ==="Eddie Redmayne"){
+            correctAnswer++;                   // the right answer for the second question is Eddie Redmayne
+            }
+            else{
+            incorrectAnswer++;
+            }
+        
+        });
+    
 
 
 });
