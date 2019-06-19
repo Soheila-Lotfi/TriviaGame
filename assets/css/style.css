@@ -15,24 +15,35 @@
 /* styling the start button */
     #start{
 
-        font-size: 30px;
-        padding: 20px 50px 20px 50px;
-        margin-top: 90px;
-        margin-left: 380px;
+    font-size: 30px;
+    padding: 20px 50px 20px 50px;
+    margin-top: 90px;
+    margin-left: 380px;
       }
 
     #main-section{
     
-      margin:0 auto;
+    margin:0 auto;
     }
 
     #container{
     
-      margin: 3% auto;
-      width: 900px;
-      min-height: 500px;
-      border: 2px solid gray;
-      background-color: rgba(231, 221, 221, 0.5);
-      
+    margin: 3% auto;
+    width: 900px;
+    min-height: 500px;
+    border: 2px solid gray;
+    background-color: rgba(231, 221, 221, 0.5);
+    
     }
+    form{
+        
+    margin:0 auto;
+      }
+
+    .radio-button{
+
+    margin-top:30px;
+    margin-bottom: 30px;
+    margin-left: 180px;
+      } 
 

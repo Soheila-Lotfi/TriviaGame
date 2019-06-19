@@ -144,7 +144,7 @@ $("#start").click(function() {
                 result();
             }
         }
-// make the result function to show the result on the page
+// make the last page showing the result of the game
     // variables
         var correctAnswer=0;
         var incorrectAnswer=0;
@@ -190,9 +190,9 @@ $("#start").click(function() {
 // make function result to show the result of the trivia game on the page
     function result(){
 
-        $("#main-section").append("<h2> Correct Answers"+""+correctAnswer+"</h2>", 
-        "<h2> Correct Answers"+""+incorrectAnswer+"</h2>",
-        "<h2> Correct Answers"+""+unAnswerd+"</h2>");
+        $("#main-section").append("<h2> Correct Answers:"+" "+correctAnswer+"</h2>", 
+        "<h2> Incorrect Answers:"+" "+incorrectAnswer+"</h2>",
+        "<h2> unanswerd:"+" "+unAnswerd+"</h2>");
      
     }
 
