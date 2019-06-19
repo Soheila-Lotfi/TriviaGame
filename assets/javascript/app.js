@@ -118,22 +118,22 @@ $("#start").click(function() {
     // append question and radio buttons (inputs and labels) into first form (first question)
      thirdQuestion.append(question3, firstInput3, firstLabel3, secondInput3, SecondLabel3, thirdInput3, thirdLabel3);
   
-    // make timer for the page using setInterval method
-      // variables
+// make timer for the page using setInterval method
+    // variables
         var count=30;      // user has 30 seconds to answer the question    
         var timer=$("<p>").html("<h2> Time Remaining:"+""+count+""+"seconds"+"</h2>");   // creat a p tag with the content of "Time Remaining:30 seconds
-      // show the timer on the page
+    // show the timer on the page
       
     // clear the start button and replace the main section with questions and timer
         $("#main-section").empty();
         $("#main-section").append(timer);
         $("#main-section").append(firstQuestion,secondQuestion, thirdQuestion);
         
-      // excute decrement function every 1 second using setInterval methos
+    // excute decrement function every 1 second using setInterval methos
         clearInterval(intervalId);
         var intervalId=setInterval(decrement, 1000);
 
-      // build the timer by creating decrement function
+    // build the timer by creating decrement function
         function decrement(){
             count--;
             timer.html("<h2> Time Remaining:"+""+count+""+"seconds"+"</h2>");    // update the content of timer with new count
@@ -144,6 +144,12 @@ $("#start").click(function() {
                 result();
             }
         }
+// make the result function to show the result on the page
+    // variables
+        var correctAnswer=0;
+        var incorrectAnswer=0;
+        var unAnswerd=3;      
+
 });
    
      
