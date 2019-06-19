@@ -129,7 +129,21 @@ $("#start").click(function() {
       // show the timer on the page
        $("#main-section").append(timer);
 
+      // excute decrement function every 1 second using setInterval methos
+        clearInterval(intervalId);
+        var intervalId=setInterval(decrement, 1000);
 
+      // build the timer by creating decrement function
+        function decrement(){
+            count--;
+            timer.html("<h2> Time Remaining:"+""+count+""+"seconds"+"</h2>");    // update the content of timer with new count
+            
+            // when count equels to zero , the timer should stop and the trivia game's result show up on the page.
+            if(count == 0){
+                $("#main-section").empty();   
+                result();
+            }
+        }
 });
    
      
