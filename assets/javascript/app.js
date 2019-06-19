@@ -118,17 +118,17 @@ $("#start").click(function() {
     // append question and radio buttons (inputs and labels) into first form (first question)
      thirdQuestion.append(question3, firstInput3, firstLabel3, secondInput3, SecondLabel3, thirdInput3, thirdLabel3);
   
-    // clear the start button and replace the main section with question
-     $("#main-section").html("");
-     $("#main-section").append(firstQuestion,secondQuestion, thirdQuestion);
-
     // make timer for the page using setInterval method
       // variables
         var count=30;      // user has 30 seconds to answer the question    
         var timer=$("<p>").html("<h2> Time Remaining:"+""+count+""+"seconds"+"</h2>");   // creat a p tag with the content of "Time Remaining:30 seconds
       // show the timer on the page
-       $("#main-section").append(timer);
-
+      
+    // clear the start button and replace the main section with questions and timer
+        $("#main-section").empty();
+        $("#main-section").append(timer);
+        $("#main-section").append(firstQuestion,secondQuestion, thirdQuestion);
+        
       // excute decrement function every 1 second using setInterval methos
         clearInterval(intervalId);
         var intervalId=setInterval(decrement, 1000);
