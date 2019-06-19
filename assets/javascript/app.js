@@ -118,7 +118,9 @@ $("#start").click(function() {
     // append question and radio buttons (inputs and labels) into first form (first question)
      thirdQuestion.append(question3, firstInput3, firstLabel3, secondInput3, SecondLabel3, thirdInput3, thirdLabel3);
   
-   
+    // clear the start button and replace the main section with question
+     $("#main-section").html("");
+     $("#main-section").append(firstQuestion,secondQuestion, thirdQuestion);
 
 });
    
