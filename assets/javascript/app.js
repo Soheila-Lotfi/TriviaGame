@@ -152,17 +152,29 @@ $("#start").click(function() {
 
     //First Question- when the user choose one of the answers, it will run function below
         firstQuestion.on('change', function() {
-        unAnswerd--;                            // user choose one answer so unanswerd questions is decreased by one
-        var userAnswer=$('input[name=firstquestion]:checked').val();        // this statemant grabs the value of whatever input has been chosen by the user and put it in a new varaible
-       
-        if(userAnswer==="1929"){          
-            correctAnswer++;                      // the user choose the right answer by choosing 1929
-        }
-        else{
+            unAnswerd--;                            // user choose one answer so unanswerd questions is decreased by one
+            var userAnswer=$('input[name=firstquestion]:checked').val();        // this statemant grabs the value of whatever input has been chosen by the user and put it in a new varaible
+        
+            if(userAnswer ==="1929"){          
+                correctAnswer++;                      // the user choose the right answer by choosing 1929
+            }
+            else{
+                incorrectAnswer++;
+            }    
+        }); 
+        
+    //secondQuestion 
+        secondQuestion.on('change', function() {
+            unAnswerd--;
+            var userAnswer=$('input[name=secondquestion]:checked').val(); 
+            if(userAnswer ==="Arendelle"){ 
+            correctAnswer++;              // the right answer for the second question is Arendelle
+            }
+            else{
             incorrectAnswer++;
-        }
- 
-});    
+            }
+         });
+
 
 });
    
